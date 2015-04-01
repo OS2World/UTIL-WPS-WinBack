@@ -1,0 +1,123 @@
+WinBack Utility v 2.0 - modified by Manfred Huber
+
+Description of version 2.0
+--------------------------
+I wasn't able to start WinBack from an Icon on OS/2 2.1 BETA 6.479,
+so I decided to port it to 32 Bit using C-Set/2. Besides this there are
+no functional differences to v 1.2 This Version does not work with pre 2.0
+versions of OS/2. New makefile included.
+
+I can be reached at my CompuServe Mailbox: 100021,3416
+
+The changes in version 2.0 are minor.  Full credit belongs to Robert Mahoney.
+-----------------------------------------------------------------------------
+WinBack Utility v 1.2 - modified by Rick Papo
+
+Description of version 1.2
+--------------------------
+Great add-on to OS/2, but I didn't like how the window stayed active after
+being pushed down to the bottom of the stack.  That, and I wanted the thing
+to show in the system task list, so I could cancel it if necessary without
+having to reboot.  Having something in the task list doesn't clutter the PM
+screen, after all.  Both changes are incorporated in this version.
+
+Changes have been made to winback.c, winhook.c & winback.dlg.  In addition,
+it has been tested under OS/2 2.0 (beta 6.149).
+
+I can be reached at my CompuServe mailbox: 72607,3111
+
+The changes in version 1.2 are minor.  Full credit belongs to Robert Mahoney.
+-----------------------------------------------------------------------------
+WinBack Utility v 1.1 - modified by Rick Suntag
+
+Description of version 1.1
+--------------------------
+When I first used the Winback utility by Robert Mahoney, I thought it
+was a great idea.  Previosly, I had been ALT-Escaping and then finding
+the correct window.  Sometimes, this led to a full screen group or even
+the Dos group being selected...a real pain.  The original utility opened
+a PM window and gave the user the ability to turn WinBack on and off.  As
+I said above, this utility is a great idea and I saw no need to ever turn
+it off.  Since there is no need to disable the utility, there is also no need
+to clutter PM with another window.  The following changes have been made:
+
+        1)  When the program is started, a 4 second dialog box with program
+            info is displayed on the screen.
+        2)  WinBack does not appear in the Task List and runs in the
+            background.
+
+Changes have been made to winback.c,winback.h,winback.rc,winback.dlg
+No changes have been made in the winhook.c (DLL source) from Robert Mahoney.
+
+I can be reached at the following address:
+
+        Rick Suntag
+        21 Meadowpark Avenue West
+        Stamford, CT 06905-2225
+
+Email:
+attmail!rjsuntag
+AT&T Easylink 62206830
+or on various OS/2 BBS systems.
+
+The changes in version 1.1 are minor.  Full credit belongs to Robert Mahoney.
+His documention follows.
+---------------------------------------------------------------------------
+
+WinBack Utility v1.0 - Robert Mahoney
+
+DISCLAIMER
+----------
+The Program is supplied "AS IS" without any warranty of any kind,
+either expressed or  implied,  including, but not limited to, the
+implied warranties of merchantability and fitness for a particular
+purpose.
+
+In  no  event  shall Robert Mahoney be liable for any damages, either
+direct or  consequential,  caused by the use, or inability to use,
+this program, even  if Robert Mahoney has been advised of the
+possibility of such damages.
+
+DESCRIPTION
+------------
+   This utility will allow you to push any active window to the
+bottom of the window pile.
+
+INSTALLATION
+------------
+   Place WINBACK.EXE on your PATH. Place WINHOOK.DLL on your
+LIBPATH.  Put an entry for WINBACK.EXE in a group and set the
+open when system started option.
+
+USAGE
+-----
+   Double-click with the right mouse button on the titlebar of an
+active window.
+
+DETAILS
+-------
+   I developed this utility after being exposed to Sun's Unix GUI,
+OpenLook.  One of the neat features of this GUI (the only neat
+feature IMHO) is when you click with the right mouse button
+anywhere on the titlebar, you get a menu similar to PM's system
+menu.  But it also includes a choice: BACK which will push the
+window to the bottom of the pile.  I thought this would be very handy
+for PM, especially with my small screen.
+   Using a sysem input hook, it was amazingly easy to do.  Now all I
+have to do is double-click with the right mouse button on the titlebar
+and the window goes to the bottom of the pile.
+It took me about 3 hours of coding.  Input hooks really should be
+written in assembler because *all* messages pass through the hook
+procedure, but as long as you only have a few input hooks, and they
+don't do any kind of real processing then you shouldn't notice any
+slowdowns.
+
+If anyone has any comments you can reach me on
+   BIX as RMAHONEY
+   Fidonet OS/2 echos  -  OS/2 Shareware  (1:109/347)
+                          703-385-0931 (HST DS)
+                          703-385-4325 (HST DS)
+        Robert Mahoney
+        27 East Jackson Ave
+        Babylon, New York 11702
+

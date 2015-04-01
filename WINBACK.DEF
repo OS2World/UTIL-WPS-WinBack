@@ -1,0 +1,6 @@
+NAME    winback    WINDOWAPI
+DESCRIPTION 'WinBack - loads the winhook DLL  - Robert Mahoney / Rick Suntag'
+STUB    'OS2STUB.EXE'
+HEAPSIZE 1024
+STACKSIZE 8192
+

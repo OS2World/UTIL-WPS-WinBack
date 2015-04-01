@@ -1,0 +1,25 @@
+DLGINCLUDE 1 "winback.h"
+
+DLGTEMPLATE InfoBox LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+    DIALOG  "Dialog Title", InfoBox, 217, 115, 160, 112, NOT FS_DLGBORDER |
+            FS_BORDER | FS_SCREENALIGN | WS_VISIBLE
+    BEGIN
+        CTEXT           "Winback Utility v 2.0",         102, 10,100, 149, 8
+
+        LTEXT           "Version 1.0 by Robert Mahoney", 103, 10, 90, 149, 8
+        LTEXT           "RMAHONEY on BIX",               104, 71, 82,  87, 8
+
+        LTEXT           "Version 1.1 modified by:",      105, 10, 72, 149, 8
+        LTEXT           "Rick Suntag",                   106, 71, 64,  87, 8
+        LTEXT           "attmail!rjsuntag",              107, 71, 56,  87, 8
+
+        LTEXT           "Version 1.2 modified by:",      108, 10, 46, 149, 8
+        LTEXT           "Rick Papo",                     109, 71, 38,  87, 8
+        LTEXT           "CIS 72607,3111",                110, 71, 30,  87, 8
+
+        LTEXT           "Version 2.0 modified by:",      111, 10, 20, 149, 8
+        LTEXT           "Manfred Huber",                 112, 71, 12,  87, 8
+        LTEXT           "CIS 100021,3416",               113, 71,  4,  87, 8
+    END
+END

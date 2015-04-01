@@ -1,0 +1,20 @@
+#makefile for winback
+
+ALL:winback.exe winhook.dll
+
+winback.res: winback.rc winback.h winback.dlg winback.ico
+    rc -r winback.rc
+
+winback.obj: winback.c winback.h
+    icc -c -O winback.c
+
+winback.exe: winback.obj winback.def winback.res
+    link386 /E winback,,,,winback;
+    rc winback.res
+
+winhook.obj: winhook.c
+    icc -Ge- -c -O winhook.C
+
+winhook.dll:      winhook.def   winhook.obj
+    link386 /E winhook,winhook.dll,,,winhook
+
